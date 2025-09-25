@@ -1,0 +1,298 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f9;
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2.2vw; /* ocupa 5% da largura da tela */
+}
+
+p {
+  font-size: 1.2rem; /* cresce se a fonte base do html mudar */
+}
+.imagemlibras{
+  position: fixed;       /* trava a imagem na tela */
+  top: 50%;              /* posição vertical inicial */
+  right: 20px;           /* distância da lateral direita */
+  transform: translateY(-50%); /* centraliza verticalmente */
+  width: 60px;          /* tamanho da imagem */
+  z-index: 9998;         /* fica acima de outros elementos */
+  border-radius: 12px;
+}
+
+.imagemlibras img:hover{
+    transform: scale(1.05);
+}
+
+.imagem-fixa {
+  position: fixed;   /* trava a imagem na tela */
+  bottom: 20px;      /* distância do rodapé */
+  right: 20px;       /* distância da lateral direita */
+  width: 100px;      /* tamanho da imagem */
+  z-index: 9999;     /* fica por cima de outros elementos */
+}
+/* Header */
+header {
+  background: #004080;
+  color: #fff;
+  padding: 15px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .logo img {
+  height: 6vh;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero (imagem de abertura) */
+.hero {
+  background: url("assets/Pictures/pessoas2.jpg") no-repeat center center/cover;
+  height: 70vh; /* só cobre parte da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-texto {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Layout principal */
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Main */
+main {
+  flex: 3;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+main h2 {
+  margin-bottom: 10px;
+  color: #004080;
+  transition: 0.8s;
+}
+
+main h2:hover{
+    color: #2190ff;
+}
+
+article {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f9f9f9;
+  transition: 0.8s;
+}
+
+article:hover{
+      transform: scale(1.01); box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+article h3 {
+  color: #0066cc;
+  margin-bottom: 5px;
+  transition: 0.8s;
+}
+
+article h3:hover, aside h2:hover{
+    color: #00264d;
+    cursor: pointer;
+}
+
+/* Aside */
+aside {
+  flex: 1;
+  background: #eaf0fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+aside h2 {
+  margin-bottom: 10px;
+  color: #004080;
+  transition: 0.8s;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  margin-bottom: 15px;
+}
+
+/* EMPRESAS */
+.empresas {
+    padding: 6rem 0 3rem;
+    text-align: center;
+}
+
+.grid-empresas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.empresa {
+    position: relative;
+}
+
+.empresa img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.empresa:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Tooltip CSS puro */
+.empresa::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.empresa:hover::after {
+    opacity: 1;
+}
+
+
+/* DIREITOS */
+.direitos {
+    padding: 3rem 0;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.direitos h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.direitos ol {
+    list-style: none;
+    counter-reset: li;
+}
+
+.direitos li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.direitos li .icon {
+    position: absolute;
+    left: 0;
+    color: #00bfa5;
+    font-weight: bold;
+}
+
+
+
+/* Footer */
+footer {
+  background: #00264d;
+  padding: 20px 40px;
+  color: white;
+}
+
+footer a {
+    font-size: 120%;
+    color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social h3 {
+  margin-right: 10px;
+}
+
+.footer-social a img {
+  height: 25px;
+  width: 25px;
+  filter: brightness(0) invert(1); /* deixa os ícones brancos */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0); /* volta à cor original no hover */
+}
