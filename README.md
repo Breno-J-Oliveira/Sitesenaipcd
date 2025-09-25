@@ -15,7 +15,8 @@
 2. [Funcionalidades](#-funcionalidades)  
 3. [Tecnologias Utilizadas](#-tecnologias-utilizadas)  
 4. [Conclusão](#-conclusão)  
-5. [Contatos e Redes Sociais](#-contatos-e-redes-sociais)  
+5. [Grupo Responsável](#-grupo-responsável)  
+6. [Contatos e Redes Sociais](#-contatos-e-redes-sociais)  
 
 ---
 
@@ -52,6 +53,15 @@ O objetivo foi criar uma **plataforma informativa e inclusiva**, voltada para **
 ## 🏆 Conclusão  
 
 Este projeto foi uma oportunidade para aplicar conceitos de HTML e CSS em um **site inclusivo**, reforçando habilidades de front-end, **acessibilidade** e boas práticas de organização de código.
+
+---
+
+## 👥 Grupo Responsável
+
+Este projeto foi desenvolvido pelo grupo:  
+- **Breno J. Oliveira** – Scrum Master  
+- **Mariana Nascimento** – Desenvolvedora  
+- **Nicolas Gustavo e Vinicius** – Documentação e ideias  
 
 ---
 
